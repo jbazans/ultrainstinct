@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ultra Instinct</title>
+	<style type="text/css">
+		body,html{
+			margin: 0;
+			padding: 0;
+		}
+		.fondo{
+			background: url('img/fondo.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+			position: relative;
+			overflow: hidden; 
+		}
+		.goku{
+			position: relative;
+			background: url('img/goku.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+			z-index: 2;
+		}
+		.efects{
+			width: 100%;
+			height: 500%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			background: url('img/efecto.png');
+			background-repeat: repeat;
+			animation: moveefect 100s linear infinite;
+			z-index: 3;
+		}
+		@keyframes moveefect{
+			0%{
+				transform: translateY(0px);
+			}
+			100%{
+				transform: translateY(-3000px);
+			}
+		}
+		.efects2{
+			width: 100%;
+			height: 500%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			background: url('img/efecto2.png');
+			background-repeat: repeat;
+			animation: moveefecttwo 200s linear infinite;
+			z-index: 1;
+		}
+		@keyframes moveefecttwo{
+			0%{
+				transform: translateY(0px);
+			}
+			100%{
+				transform: translateY(-3000px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="fondo">
+		<div class="goku"></div>
+		<div class="efects"></div>
+		<div class="efects2"></div>
+	</div>
+</body>
+</html>
